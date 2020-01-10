@@ -29,9 +29,8 @@ namespace NeuralNetworkLib
             _nnTeacher.TrainNet();
         }
 
-        public void Handle(double[] surroundingDepths)
-        {
-            double[] anwser = _nnTeacher.HandleByNet(surroundingDepths);
-        }
+        public double[] Handle(double[] surroundingDepths) =>
+            _nnTeacher.HandleByNet(surroundingDepths);
+        
     }
 }
