@@ -13,7 +13,7 @@ namespace NeuralNetworkLib
             const int receptors = 3;
 
             const int numberOfOutputClasses = 3;
-            int[] neuronByLayer = { 3, numberOfOutputClasses };
+            int[] neuronByLayer = { 10, numberOfOutputClasses };
 
             _fileManager = new FileManager();
 
