@@ -197,9 +197,9 @@ namespace NeuralNetworkLib
                 while (!fileReader.EndOfStream)
                 {
                     string[] readedLine = fileReader.ReadLine().Split(' ');
-                    double[] set = new double[readedLine.Length - 1];
+                    double[] set = new double[readedLine.Length];
 
-                    for (int i = 0; i < readedLine.Length - 1; i++)
+                    for (int i = 0; i < readedLine.Length; i++)
                     {
                         set[i] = double.Parse(readedLine[i]);
                     }

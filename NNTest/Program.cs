@@ -9,8 +9,8 @@ namespace NNTest
         {
             var serviceNN = new ServiceNN(100000);
 
-            serviceNN.Train();
-            var result = serviceNN.Handle(new double[] {85, 25, 15});
+            //serviceNN.Train();
+            var result = serviceNN.Handle(new double[] {55, 30, 55});
             Console.ReadKey();
         }
     }
