@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NeuralNetworkLib;
 
 namespace NNTest
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
+            var serviceNN = new ServiceNN(100000);
 
+            serviceNN.Train();
+            var result = serviceNN.Handle(new double[] {85, 25, 15});
+            Console.ReadKey();
         }
     }
 }
